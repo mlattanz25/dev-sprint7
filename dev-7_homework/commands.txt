@@ -1,0 +1,101 @@
+IRB exercises
+Each Ruby command will return a value. Sometimes, these values are not what we expect.
+
+Try the following Commands:
+
+string = "Hello World"
+
+=> "Hello World"
+
+Ruby returns the string. 
+
+string.reverse
+=> "dlroW olleH" 
+
+Ruby reverses hello world. "dlroW olleH" 
+
+string
+=> "Hello World"
+
+Ruby calls the original string.
+
+array = [3,1,2]
+=> [3, 1, 2]
+
+Ruby prints the newly formed array.
+
+array.sort
+=> [1, 2, 3]
+
+Ruby sorts the new array.
+
+array
+=> [3, 1, 2]
+Ruby will call the original array. 
+
+
+array.sort!
+=> [1, 2, 3]
+
+array
+=> [1, 2, 3]
+
+=> What do you think the exclamation mark indicates?
+
+The exclamation mark made the ordered ray the original ray.
+
+
+puts "Hello Ruby"
+=> Hello Ruby
+ => nil
+
+array = [1,2,3,4]
+=> [1, 2, 3, 4]
+
+array.each do |e|
+  e**2
+end
+=> [1, 2, 3, 4]
+
+array.each { |e| e**2 }
+=> [1, 2, 3, 4]
+
+array
+=> [1, 2, 3, 4]
+
+array.map do |e|
+  e**2
+end
+=> [1, 4, 9, 16]
+
+Array is being squared.
+
+array
+=> [1, 2, 3, 4]
+
+
+array.inject(0) do |sum, e|
+  sum += e
+  sum
+end
+=> 10
+
+array
+=> [1, 2 ,3, 4]
+
+array.reject do |e|
+  e > 2
+end
+=> [1, 2]
+
+array
+=> [1, 2, 3, 4]
+
+
+
+
+
+
+
+
+
